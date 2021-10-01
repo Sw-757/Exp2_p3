@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        h1 {
+           background-color: red;
+           color: black;
+           font-weight: bold;
+           text-align: center;
+       }
+       div p {
+           color: rgb(0, 0, 128);
+           background-color: lightyellow;
+           font-weight: bold;
+       }
+        p{
+            border: 2px solid pink;
+        }
+        div li p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    }
+    li:nth-child(3){
+    color: pink;
+}
+
+        /* Id selector */
+        #firstPara{
+            color: brown;
+        }
+
+        /* Class selector */
+        .bgBlue{
+            color: green;
+            background-color: lightblue;
+        }
+
+        /* Grouping selector */
+        footer, span{
+            background-color: voilet;
+        }
+    </style>
+</head>
+<body>
+  <h1> be made and the wrong choice could signal the end of the pack.</h1>
+    <div class="container">
+        <div class="row">
+            <p> risks taking on the mother Grizzly. A decision had to</p>
+        </div>
+        <p> This is another paragraph</p>
+    </div>
+    <p> be made and the wrong choice could signal the end of the pack.</p>
+    <p id="firstPara">The wolves stopped in their tracks, sizing up the</p>
+    <p id="secondPara" class="redElement bgBlue">mother and her cubs. It had been over a week since</p>
+    <div>
+        <p>their last meal and they were getting desperate. The</p>
+        <span>this is span</span>
+    </div>
+    <div class="row">
+            <ul>
+                <li class="item"><p> this is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+                <li> Hello world </li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <footer>This is footer</footer>
+</body>
+</html>
